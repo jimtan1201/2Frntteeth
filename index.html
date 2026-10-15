@@ -114,6 +114,7 @@
   .session{background:#fffaf2;border:1px solid var(--line);border-radius:20px;padding:14px 14px 22px;transition:transform .25s,box-shadow .25s}
   .session:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 26px 40px -26px rgba(43,29,22,.5)}
   .session .frame{aspect-ratio:4/5;border-radius:12px;background:var(--g);background-size:cover;background-position:center;position:relative;overflow:hidden}
+  .session .frame img{width:100%;height:100%;object-fit:cover}
   .session .frame .num{position:absolute;left:12px;top:10px;font:600 11px var(--sans);letter-spacing:.16em;color:rgba(255,255,255,.9)}
   .session h3{font-size:26px;margin:18px 6px 8px}
   .session p{font-size:15px;color:var(--ink-soft);margin:0 6px}
@@ -270,12 +271,12 @@
         </form>
       </div>
 
-      <!-- Swap the gradients for real photos: add <img src="your-photo.jpg" alt="..."> inside each .photo -->
+      <!-- Placeholder photos (StockSnap, CC0). Replace files in /images with the client's own photos. -->
       <div class="stack" aria-hidden="true">
-        <figure class="polaroid p1"><span class="tape"></span><div class="photo"></div><figcaption>the whole crew</figcaption></figure>
-        <figure class="polaroid p2"><div class="photo"></div><figcaption>10 days new</figcaption></figure>
-        <figure class="polaroid p3"><div class="photo"></div><figcaption>good boy, Biscuit</figcaption></figure>
-        <figure class="polaroid p4"><span class="tape"></span><div class="photo"></div><figcaption>pumpkin patch '26</figcaption></figure>
+        <figure class="polaroid p1"><span class="tape"></span><div class="photo"><img src="images/hero-family.jpg" alt=""></div><figcaption>the whole crew</figcaption></figure>
+        <figure class="polaroid p2"><div class="photo"><img src="images/hero-baby.jpg" alt=""></div><figcaption>10 days new</figcaption></figure>
+        <figure class="polaroid p3"><div class="photo"><img src="images/hero-dog.jpg" alt=""></div><figcaption>good boy, Biscuit</figcaption></figure>
+        <figure class="polaroid p4"><span class="tape"></span><div class="photo"><img src="images/hero-seasonal.jpg" alt=""></div><figcaption>pumpkin patch '26</figcaption></figure>
         <div class="sticker"><div>Free<b>Playbook</b>+ VIP minis</div></div>
       </div>
     </div>
@@ -296,10 +297,10 @@
         <h2>Four kinds of sessions. One goal: photos you'll frame.</h2>
       </div>
       <div class="sessions">
-        <article class="session reveal"><div class="frame s1"><span class="num">01</span></div><h3>Family</h3><p>Siblings, grandparents, the whole lot. Outdoors or at home, relaxed and playful.</p><span class="tag">All ages</span></article>
-        <article class="session reveal"><div class="frame s2"><span class="num">02</span></div><h3>Baby</h3><p>Newborn, sitter and first-birthday sessions, paced around naps and feeds.</p><span class="tag">Newborn to 1 yr</span></article>
-        <article class="session reveal"><div class="frame s3"><span class="num">03</span></div><h3>Dog</h3><p>Zoomies, head tilts and the patient ones too. Solo pups or the full pack with you.</p><span class="tag">Treats included</span></article>
-        <article class="session reveal"><div class="frame s4"><span class="num">04</span></div><h3>Seasonal Minis</h3><p>Short, styled sets for fall, holidays and spring. Limited dates every season.</p><span class="tag">VIP early access</span></article>
+        <article class="session reveal"><div class="frame s1"><img src="images/session-family.jpg" alt="Family playing together outdoors" loading="lazy"><span class="num">01</span></div><h3>Family</h3><p>Siblings, grandparents, the whole lot. Outdoors or at home, relaxed and playful.</p><span class="tag">All ages</span></article>
+        <article class="session reveal"><div class="frame s2"><img src="images/session-baby.jpg" alt="Newborn baby sleeping" loading="lazy"><span class="num">02</span></div><h3>Baby</h3><p>Newborn, sitter and first-birthday sessions, paced around naps and feeds.</p><span class="tag">Newborn to 1 yr</span></article>
+        <article class="session reveal"><div class="frame s3"><img src="images/session-dog.jpg" alt="Labrador looking out a window" loading="lazy"><span class="num">03</span></div><h3>Dog</h3><p>Zoomies, head tilts and the patient ones too. Solo pups or the full pack with you.</p><span class="tag">Treats included</span></article>
+        <article class="session reveal"><div class="frame s4"><img src="images/session-seasonal.jpg" alt="Mother and children in winter hats outdoors" loading="lazy"><span class="num">04</span></div><h3>Seasonal Minis</h3><p>Short, styled sets for fall, holidays and spring. Limited dates every season.</p><span class="tag">VIP early access</span></article>
       </div>
     </div>
   </section>
