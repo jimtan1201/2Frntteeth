@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Picture-Day Playbook | Two Front Teeth Photography</title>
+<meta name="description" content="Get the free Picture-Day Playbook from Two Front Teeth Photography and first access to seasonal mini sessions for families, babies and dogs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Reenie+Beanie&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6EFE4; --paper-2:#EDE2CF; --ink:#2B1D16; --ink-soft:#6A5546;
+    --tomato:#D9472B; --tomato-dk:#B5361E; --butter:#F2C14E; --sage:#8FA58A; --sky:#9DB8C7;
+    --dark:#1C1310; --line:rgba(43,29,22,.14);
+    --serif:"Young Serif",Georgia,serif; --sans:"Albert Sans",system-ui,sans-serif; --hand:"Reenie Beanie",cursive;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.35;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .11 0 0 0 0 .08 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+  .eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--tomato)}
+  .hand{font-family:var(--hand);font-size:1.6em;line-height:1}
+
+  /* promo bar */
+  .promo{background:var(--ink);color:var(--paper);font-size:14px;text-align:center;padding:10px 16px}
+  .promo b{color:var(--butter);font-weight:600}
+  .promo a{color:var(--paper);text-underline-offset:3px}
+
+  /* header */
+  header{padding:22px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:20px;line-height:1}
+  .logo small{display:block;font:600 10px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-top:5px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;text-decoration:none;
+    font:600 16px/1 var(--sans);padding:17px 26px;border-radius:999px;background:var(--tomato);color:#fff;
+    box-shadow:0 2px 0 var(--tomato-dk),0 10px 24px -10px rgba(217,71,43,.7);transition:transform .15s,box-shadow .15s,background .15s}
+  .btn:hover{background:var(--tomato-dk);transform:translateY(-2px)}
+  .btn:active{transform:translateY(0)}
+  .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink);padding:12px 20px;font-size:14px}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+
+  /* hero */
+  .hero{padding:28px 0 90px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(40px,6vw,74px);margin:18px 0 22px}
+  .hero h1 em{font-style:normal;color:var(--tomato);position:relative;white-space:nowrap}
+  .hero h1 em::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.04em;height:.16em;background:var(--butter);z-index:-1;border-radius:4px;transform:rotate(-1deg)}
+  .lede{font-size:19px;color:var(--ink-soft);max-width:34em}
+  .lede b{color:var(--ink);font-weight:600}
+
+  /* opt-in card */
+  .optin{margin-top:30px;background:#fffaf2;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 24px 50px -30px rgba(43,29,22,.45);max-width:520px}
+  .optin .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+  .field label{font-size:13px;font-weight:600;color:var(--ink-soft)}
+  .field input{font:400 16px var(--sans);color:var(--ink);background:var(--paper);border:1.5px solid transparent;border-radius:12px;padding:13px 14px;outline:none;transition:border-color .15s,background .15s}
+  .field input:focus{border-color:var(--ink);background:#fff}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 16px;border:0}
+  .chips legend{font-size:13px;font-weight:600;color:var(--ink-soft);margin-bottom:8px;width:100%}
+  .chip input{position:absolute;opacity:0;pointer-events:none}
+  .chip span{display:inline-block;padding:9px 15px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:500;cursor:pointer;transition:all .15s;user-select:none}
+  .chip span:hover{border-color:var(--ink)}
+  .chip input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .chip input:focus-visible+span{outline:2px solid var(--tomato);outline-offset:2px}
+  .optin .btn{width:100%}
+  .fine{font-size:12.5px;color:var(--ink-soft);margin-top:12px;text-align:center}
+
+  /* developing polaroids */
+  .stack{position:relative;height:600px}
+  .polaroid{position:absolute;width:56%;background:#fffdf8;padding:12px 12px 0;border-radius:3px;
+    box-shadow:0 1px 1px rgba(0,0,0,.08),0 22px 40px -18px rgba(43,29,22,.55);
+    opacity:0;animation:drop .9s cubic-bezier(.2,.9,.25,1.15) forwards;transition:transform .35s cubic-bezier(.2,.9,.25,1.2)}
+  .polaroid:hover{transform:rotate(0deg) scale(1.04)!important;z-index:9}
+  .polaroid .photo{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--g);background-size:cover;background-position:center}
+  .polaroid .photo img{width:100%;height:100%;object-fit:cover}
+  .polaroid .photo::after{content:"";position:absolute;inset:0;background:#2a2622;animation:develop 3.2s ease-out forwards;animation-delay:inherit}
+  .polaroid figcaption{font-family:var(--hand);font-size:28px;line-height:1;text-align:center;padding:12px 0 14px;color:#3a2a22}
+  .p1{--r:-7deg;left:0;top:30px;transform:rotate(-7deg);animation-delay:.15s}
+  .p2{--r:6deg;right:0;top:0;transform:rotate(6deg);animation-delay:.4s}
+  .p3{--r:5deg;left:6%;bottom:0;transform:rotate(5deg);animation-delay:.65s}
+  .p4{--r:-4deg;right:4%;bottom:26px;transform:rotate(-4deg);animation-delay:.9s}
+  .p1 .photo{--g:radial-gradient(circle at 35% 40%,#f3c9a0,#c98a62 55%,#7d5642)}
+  .p2 .photo{--g:radial-gradient(circle at 60% 35%,#fde7d6,#efc0b0 55%,#b98d86)}
+  .p3 .photo{--g:radial-gradient(circle at 50% 45%,#e4d2a8,#a8955f 55%,#5c5434)}
+  .p4 .photo{--g:radial-gradient(circle at 45% 40%,#f5b26b,#c4632f 55%,#6e2e17)}
+  .p1 .photo::after{animation-delay:.9s}.p2 .photo::after{animation-delay:1.15s}.p3 .photo::after{animation-delay:1.4s}.p4 .photo::after{animation-delay:1.65s}
+  .tape{position:absolute;top:-12px;left:50%;width:84px;height:24px;margin-left:-42px;background:rgba(242,193,78,.75);transform:rotate(-3deg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  .sticker{position:absolute;z-index:10;left:42%;top:43%;width:128px;height:128px;border-radius:50%;background:var(--tomato);color:#fff;
+    display:grid;place-items:center;text-align:center;font:600 13px/1.15 var(--sans);letter-spacing:.06em;text-transform:uppercase;
+    box-shadow:0 14px 30px -12px rgba(217,71,43,.8);animation:spin-in 1s 1.9s cubic-bezier(.2,.9,.25,1.3) both}
+  .sticker b{display:block;font:400 30px/1 var(--serif);letter-spacing:0;text-transform:none;margin:3px 0}
+  @keyframes drop{from{opacity:0;transform:translateY(-40px) rotate(0deg) scale(1.06)}to{opacity:1;transform:rotate(var(--r))}}
+  @keyframes develop{0%{opacity:1}35%{opacity:.85;background:#4a3a2c}100%{opacity:0;background:#8c6f4f}}
+  @keyframes spin-in{from{opacity:0;transform:scale(.3) rotate(-90deg)}to{opacity:1;transform:scale(1) rotate(-12deg)}}
+
+  /* marquee */
+  .ticker{background:var(--butter);border-block:1.5px solid var(--ink);overflow:hidden;padding:14px 0}
+  .ticker div{display:flex;gap:44px;width:max-content;animation:scroll 32s linear infinite;font-family:var(--serif);font-size:24px;white-space:nowrap}
+  .ticker span::after{content:"\2726";margin-left:44px;color:var(--tomato)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* sessions */
+  section{padding:110px 0}
+  .head{max-width:640px;margin-bottom:56px}
+  .head h2{font-size:clamp(34px,4.6vw,56px);margin-top:14px}
+  .head p{color:var(--ink-soft);font-size:18px;margin-top:16px}
+  .sessions{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .session{background:#fffaf2;border:1px solid var(--line);border-radius:20px;padding:14px 14px 22px;transition:transform .25s,box-shadow .25s}
+  .session:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 26px 40px -26px rgba(43,29,22,.5)}
+  .session .frame{aspect-ratio:4/5;border-radius:12px;background:var(--g);background-size:cover;background-position:center;position:relative;overflow:hidden}
+  .session .frame .num{position:absolute;left:12px;top:10px;font:600 11px var(--sans);letter-spacing:.16em;color:rgba(255,255,255,.9)}
+  .session h3{font-size:26px;margin:18px 6px 8px}
+  .session p{font-size:15px;color:var(--ink-soft);margin:0 6px}
+  .session .tag{display:inline-block;margin:14px 6px 0;font-size:12px;font-weight:600;letter-spacing:.06em;padding:6px 11px;border-radius:999px;background:var(--paper-2)}
+  .s1{--g:linear-gradient(160deg,#e7b48c,#9c6446)}
+  .s2{--g:linear-gradient(160deg,#f6dcd2,#c99a90)}
+  .s3{--g:linear-gradient(160deg,#cfc08f,#6f6438)}
+  .s4{--g:linear-gradient(160deg,#f0a160,#8a3a1a)}
+
+  /* darkroom experience */
+  .darkroom{background:var(--dark);color:var(--paper);position:relative;overflow:hidden}
+  .darkroom::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-380px;border-radius:50%;background:radial-gradient(circle,rgba(217,71,43,.38),transparent 62%);pointer-events:none}
+  .darkroom .head p{color:rgba(246,239,228,.7)}
+  .darkroom .eyebrow{color:var(--butter)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(246,239,228,.18);position:relative}
+  .step{padding:34px 26px 10px 0;position:relative}
+  .step+.step{padding-left:26px;border-left:1px solid rgba(246,239,228,.18)}
+  .step .n{font:400 64px/1 var(--serif);color:transparent;-webkit-text-stroke:1px rgba(246,239,228,.45)}
+  .step h3{font-size:24px;margin:18px 0 10px}
+  .step p{font-size:15.5px;color:rgba(246,239,228,.72)}
+  .step .hand{display:block;color:var(--butter);margin-top:14px;font-size:26px}
+  .promise{margin-top:70px;display:flex;align-items:center;gap:28px;padding:30px;border:1.5px dashed rgba(242,193,78,.5);border-radius:20px}
+  .promise .seal{flex:none;width:86px;height:86px;border-radius:50%;background:var(--butter);color:var(--ink);display:grid;place-items:center;font:400 34px var(--serif);transform:rotate(-10deg)}
+  .promise p{font-size:18px;color:rgba(246,239,228,.85)}
+  .promise b{color:var(--paper);font-weight:600}
+
+  /* playbook */
+  .playbook .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+  .book{position:relative;aspect-ratio:3/4;max-width:400px;margin-inline:auto;width:100%}
+  .book .cover{position:absolute;inset:0;background:var(--tomato);border-radius:6px 16px 16px 6px;padding:38px 34px;color:#fff;display:flex;flex-direction:column;
+    box-shadow:inset 10px 0 0 rgba(0,0,0,.12),0 40px 60px -30px rgba(43,29,22,.7);transform:rotate(-4deg)}
+  .book .pages{position:absolute;inset:8px -10px -8px 10px;background:#fffaf2;border-radius:6px 14px 14px 6px;transform:rotate(-1deg);box-shadow:0 20px 40px -20px rgba(43,29,22,.4)}
+  .book .cover small{font:600 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+  .book .cover strong{font:400 46px/1 var(--serif);margin-top:auto}
+  .book .cover span{font-size:15px;margin-top:14px;opacity:.9}
+  .book .teeth{position:absolute;right:30px;top:30px}
+  .list{list-style:none;display:grid;gap:4px;margin-top:30px}
+  .list li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .list li i{font-style:normal;font:400 22px var(--serif);color:var(--tomato)}
+  .list li b{display:block;font-weight:600;font-size:17px}
+  .list li span{color:var(--ink-soft);font-size:15.5px}
+
+  /* reviews */
+  .reviews{background:var(--paper-2)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .quote{background:#fffaf2;border-radius:20px;padding:30px;position:relative}
+  .quote:nth-child(2){transform:translateY(28px)}
+  .quote::before{content:"\201C";font:400 90px/1 var(--serif);color:var(--tomato);position:absolute;top:10px;right:22px;opacity:.25}
+  .quote p{font-family:var(--serif);font-size:20px;line-height:1.35}
+  .quote footer{margin-top:22px;font-size:14px;color:var(--ink-soft)}
+  .quote footer b{color:var(--ink);font-weight:600}
+  .stars{color:var(--tomato);letter-spacing:3px;font-size:15px;margin-bottom:14px}
+
+  /* faq */
+  .faq{max-width:780px}
+  details{border-bottom:1px solid var(--line);padding:22px 0}
+  summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font:400 22px/1.3 var(--serif)}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:var(--sans);font-size:26px;line-height:1;color:var(--tomato);transition:transform .25s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--ink-soft);margin-top:12px;max-width:62ch}
+
+  /* final cta */
+  .final{padding:0 0 110px}
+  .final .box{background:var(--tomato);color:#fff;border-radius:30px;padding:70px 60px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;position:relative;overflow:hidden}
+  .final .box::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.35);left:-140px;bottom:-200px}
+  .final h2{font-size:clamp(34px,4.4vw,54px)}
+  .final p{opacity:.9;margin-top:16px;font-size:18px}
+  .final .optin{margin:0;color:var(--ink);max-width:none;position:relative;z-index:1}
+  .final .btn{background:var(--ink);box-shadow:0 2px 0 #000}
+  .final .btn:hover{background:#000}
+
+  footer.site{border-top:1px solid var(--line);padding:34px 0;font-size:14px;color:var(--ink-soft)}
+  footer.site .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:980px){
+    .hero .wrap,.playbook .wrap,.final .box{grid-template-columns:1fr}
+    .stack{height:520px;max-width:520px;width:100%;margin-inline:auto;order:-1}
+    .sessions,.steps{grid-template-columns:1fr 1fr}
+    .step:nth-child(3){border-left:0;padding-left:0}
+    .quotes{grid-template-columns:1fr}
+    .quote:nth-child(2){transform:none}
+    .final .box{padding:48px 28px}
+  }
+  @media (max-width:600px){
+    body{font-size:16px}
+    header .btn{display:none}
+    .stack{height:400px;order:0}
+    .polaroid figcaption{font-size:22px}
+    .sticker{width:100px;height:100px;font-size:11px}
+    .sticker b{font-size:24px}
+    .optin{padding:18px}
+    .optin .row{grid-template-columns:1fr}
+    section{padding:80px 0}
+    .sessions,.steps{grid-template-columns:1fr}
+    .step,.step+.step{padding:28px 0 6px;border-left:0}
+    .step+.step{border-top:1px solid rgba(246,239,228,.18)}
+    .promise{flex-direction:column;text-align:center}
+    .final .box{border-radius:22px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .polaroid,.reveal{opacity:1;transform:rotate(var(--r,0))}
+    .polaroid .photo::after{opacity:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="promo">Seasonal mini sessions are opening soon. <b>Playbook readers get first pick of dates.</b> <a href="#get-playbook">Get on the list</a></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#D9472B"/><rect x="9.5" y="9" width="7" height="13" rx="3" fill="#fffaf2"/><rect x="17.5" y="9" width="7" height="13" rx="3" fill="#fffaf2"/></svg>
+      <span>Two Front Teeth<small>Photography</small></span>
+    </a>
+    <a class="btn ghost" href="#get-playbook">Get the free Playbook</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO + OPT-IN -->
+  <section class="hero" style="padding-top:28px">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Family &middot; Baby &middot; Dog &middot; Seasonal</span>
+        <h1>Photos of the gap-toothed grins, the puppy chaos, and <em>the real you.</em></h1>
+        <p class="lede">Grab the free <b>Picture-Day Playbook</b>: what to wear, how to prep kids, babies and dogs, and how to make the session fun instead of stressful. You also get <b>first access to our seasonal mini sessions</b> before they go public.</p>
+
+        <!--
+          GHL: replace this <form> with your GHL form embed, or keep it and point the
+          action at your thank-you step. Field names match standard GHL fields.
+        -->
+        <form class="optin" id="get-playbook" action="thank-you.html" method="get">
+          <div class="row">
+            <div class="field"><label for="fn">First name</label><input id="fn" name="first_name" autocomplete="given-name" required></div>
+            <div class="field"><label for="ph">Phone <span style="font-weight:400">(optional)</span></label><input id="ph" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field"><label for="em">Email (where we send the Playbook)</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+          <fieldset class="chips">
+            <legend>Who's in front of the camera?</legend>
+            <label class="chip"><input type="checkbox" name="interest" value="family"><span>Family</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="baby"><span>Baby / Newborn</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="dog"><span>Dog</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="seasonal"><span>Seasonal Minis</span></label>
+          </fieldset>
+          <button class="btn" type="submit">Send me the free Playbook &rarr;</button>
+          <p class="fine">Free PDF, delivered instantly. No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+
+      <!-- Swap the gradients for real photos: add <img src="your-photo.jpg" alt="..."> inside each .photo -->
+      <div class="stack" aria-hidden="true">
+        <figure class="polaroid p1"><span class="tape"></span><div class="photo"></div><figcaption>the whole crew</figcaption></figure>
+        <figure class="polaroid p2"><div class="photo"></div><figcaption>10 days new</figcaption></figure>
+        <figure class="polaroid p3"><div class="photo"></div><figcaption>good boy, Biscuit</figcaption></figure>
+        <figure class="polaroid p4"><span class="tape"></span><div class="photo"></div><figcaption>pumpkin patch '26</figcaption></figure>
+        <div class="sticker"><div>Free<b>Playbook</b>+ VIP minis</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div>
+      <span>Messy hair welcome</span><span>Treats in our pocket</span><span>No stiff poses</span><span>Tears are fine (yours too)</span><span>Muddy paws allowed</span><span>Real laughs only</span>
+      <span>Messy hair welcome</span><span>Treats in our pocket</span><span>No stiff poses</span><span>Tears are fine (yours too)</span><span>Muddy paws allowed</span><span>Real laughs only</span>
+    </div>
+  </div>
+
+  <!-- SESSIONS -->
+  <section>
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">What we shoot</span>
+        <h2>Four kinds of sessions. One goal: photos you'll frame.</h2>
+      </div>
+      <div class="sessions">
+        <article class="session reveal"><div class="frame s1"><span class="num">01</span></div><h3>Family</h3><p>Siblings, grandparents, the whole lot. Outdoors or at home, relaxed and playful.</p><span class="tag">All ages</span></article>
+        <article class="session reveal"><div class="frame s2"><span class="num">02</span></div><h3>Baby</h3><p>Newborn, sitter and first-birthday sessions, paced around naps and feeds.</p><span class="tag">Newborn to 1 yr</span></article>
+        <article class="session reveal"><div class="frame s3"><span class="num">03</span></div><h3>Dog</h3><p>Zoomies, head tilts and the patient ones too. Solo pups or the full pack with you.</p><span class="tag">Treats included</span></article>
+        <article class="session reveal"><div class="frame s4"><span class="num">04</span></div><h3>Seasonal Minis</h3><p>Short, styled sets for fall, holidays and spring. Limited dates every season.</p><span class="tag">VIP early access</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="darkroom">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">The experience</span>
+        <h2>It's not a photo shoot. It's a morning your family remembers.</h2>
+        <p>We plan everything with you so all you have to do is show up and enjoy each other.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3>The planning chat</h3><p>A quick call to learn your family's personalities, pick the spot, and sort out outfits. Our style guide does the rest.</p><span class="hand">we ask the dog's name first</span></div>
+        <div class="step reveal"><div class="n">02</div><h3>Session day</h3><p>Games, songs, snacks and squeaky toys. We follow your kids' and pets' lead instead of forcing poses.</p><span class="hand">bribery is encouraged</span></div>
+        <div class="step reveal"><div class="n">03</div><h3>The reveal</h3><p>You see your gallery for the first time together with us, and choose your favourites with zero pressure.</p><span class="hand">bring tissues</span></div>
+        <div class="step reveal"><div class="n">04</div><h3>Heirlooms</h3><p>Online gallery plus prints and albums made to last long enough for your grandkids to laugh at your outfits.</p><span class="hand">yes, the matching sweaters</span></div>
+      </div>
+      <div class="promise reveal">
+        <div class="seal">&hearts;</div>
+        <p><b>The Two Front Teeth promise:</b> if a little one melts down or the weather turns, we pause, regroup or reschedule. No stress, no extra fee. <!-- [CONFIRM reschedule policy] --></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYBOOK -->
+  <section class="playbook">
+    <div class="wrap">
+      <div class="book reveal" aria-hidden="true">
+        <div class="pages"></div>
+        <div class="cover">
+          <svg class="teeth" width="46" height="46" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#fffaf2"/><rect x="9.5" y="9" width="7" height="13" rx="3" fill="#D9472B"/><rect x="17.5" y="9" width="7" height="13" rx="3" fill="#D9472B"/></svg>
+          <small>Two Front Teeth Photography</small>
+          <strong>The Picture-Day Playbook</strong>
+          <span>For families, babies, dogs and every season in between.</span>
+        </div>
+      </div>
+      <div>
+        <div class="head reveal" style="margin-bottom:0">
+          <span class="eyebrow">Inside the free guide</span>
+          <h2>Everything we tell clients before they step in front of the camera.</h2>
+        </div>
+        <ul class="list">
+          <li class="reveal"><i>01</i><div><b>What to wear, by season</b><span>Colour palettes and outfit combos that look good together without matching head to toe.</span></div></li>
+          <li class="reveal"><i>02</i><div><b>Prepping toddlers and babies</b><span>Nap timing, snacks, and the one sentence that gets kids excited instead of grumpy.</span></div></li>
+          <li class="reveal"><i>03</i><div><b>Getting your dog camera-ready</b><span>Grooming timing, the best treats to bring, and how to handle a pup that won't sit.</span></div></li>
+          <li class="reveal"><i>04</i><div><b>Where to hang your photos</b><span>Print sizes and wall layouts so your favourites end up on the wall, not stuck on your phone.</span></div></li>
+        </ul>
+        <a class="btn reveal" href="#get-playbook" style="margin-top:32px">Get the Playbook free &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS: sample text only. Replace with real client reviews before publishing. -->
+  <section class="reviews">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Kind words</span>
+        <h2>Families who came for photos and left with a story.</h2>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>My toddler cried for the first ten minutes and we still got the best photo we've ever had of the four of us.</p><footer><b>[Client name]</b> &middot; Family session</footer></blockquote>
+        <blockquote class="quote reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Our rescue doesn't trust anyone. Twenty minutes in he was rolling on his back for belly rubs.</p><footer><b>[Client name]</b> &middot; Dog session</footer></blockquote>
+        <blockquote class="quote reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>The newborn session was so calm. I didn't realise how much I'd want these photos until I saw them.</p><footer><b>[Client name]</b> &middot; Baby session</footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap faq">
+      <div class="head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Good to know</h2>
+      </div>
+      <details><summary>Is the Playbook really free?</summary><p>Yes. Enter your name and email and it lands in your inbox right away. No card, no catch.</p></details>
+      <details><summary>What's VIP early access to mini sessions?</summary><p>Seasonal mini session dates fill fast. Playbook readers get the booking link before we announce publicly, so you get first pick of times.</p></details>
+      <details><summary>My kids or my dog won't sit still. Is that a problem?</summary><p>Not at all, it's most of our sessions. We work with their energy, take breaks, and use games and treats to get real smiles.</p></details>
+      <details><summary>Where do sessions happen?</summary><p>Outdoor locations, your home, or our studio, depending on the session. We'll help you choose on the planning call. <!-- [CONFIRM service area / studio address] --></p></details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="wrap">
+      <div class="box">
+        <div>
+          <h2>The years go fast. The photos stay.</h2>
+          <p>Get the free Picture-Day Playbook and be first in line for this season's mini sessions.</p>
+        </div>
+        <form class="optin" action="thank-you.html" method="get">
+          <div class="field"><label for="fn2">First name</label><input id="fn2" name="first_name" autocomplete="given-name" required></div>
+          <div class="field"><label for="em2">Email</label><input id="em2" name="email" type="email" autocomplete="email" required></div>
+          <button class="btn" type="submit">Send me the Playbook &rarr;</button>
+          <p class="fine">Free PDF. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Two Front Teeth Photography</span>
+    <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transitionDelay = (i % 4) * 90 + 'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
